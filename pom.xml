@@ -87,7 +87,7 @@
         <configuration>
           <image>
             <buildpacks>
-              <buildpack>paketobuildpacks/java-native-image</buildpack>
+              <buildpack>paketobuildpacks/java</buildpack>
             </buildpacks>
             <builder>paketobuildpacks/builder-jammy-buildpackless-tiny</builder>
             <name>dashaun/${project.name}:v${project.version}-${os.detected.arch}</name>

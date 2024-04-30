@@ -1,7 +1,7 @@
 spring:
     ai:
         ollama:
-            base-url: http://localhost:11434
+            base-url: http://ollama.dashaun-io.svc.cluster.local:11434
             chat:
                 options:
                     model: llama2
