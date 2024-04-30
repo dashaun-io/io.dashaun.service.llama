@@ -86,10 +86,7 @@
         </executions>
         <configuration>
           <image>
-            <buildpacks>
-              <buildpack>paketobuildpacks/java</buildpack>
-            </buildpacks>
-            <builder>paketobuildpacks/builder-jammy-buildpackless-tiny</builder>
+            <builder>dashaun/builder:tiny</builder>
             <name>dashaun/${project.name}:v${project.version}-${os.detected.arch}</name>
           </image>
         </configuration>
