@@ -16,8 +16,8 @@ jobs:
           candidate: java
           version: 21.0.3-librca
       - run:
-          name: "mvnw spring-boot:build-image"
-          command: "./mvnw spring-boot:build-image"
+          name: "mvnw -Pnative spring-boot:build-image"
+          command: "./mvnw -Pnative spring-boot:build-image"
       - docker/check:
           docker-username: DOCKER_LOGIN
           docker-password: DOCKERHUB_PASSWORD
