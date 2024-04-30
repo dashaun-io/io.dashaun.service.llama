@@ -1,0 +1,10 @@
+spring:
+    ai:
+        ollama:
+            base-url: http://localhost:11434
+            chat:
+                options:
+                    model: llama2
+    threads:
+        virtual:
+            enabled: true
